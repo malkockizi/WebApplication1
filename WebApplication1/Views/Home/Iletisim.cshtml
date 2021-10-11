@@ -1,0 +1,31 @@
+﻿@{
+    ViewData["Title"] = "Kişisel Bilgi";
+}
+<h1>@ViewData["Title"]</h1>
+
+<p>Lütfen Bilgilerinizi Doğru Giriniz.</p>
+<br />
+
+<html>
+<body>
+    <form asp-action="iletisim" asp-controller="Home" method="post">
+
+        Adı:<br>
+        <input type="text" name="Adi">
+        <br>
+        Soyadı:<br>
+        <input type="text" name="Soyadi">
+        <br>
+        Memleketi:<br>
+        <input type="text" name="Memleketi">
+        <br>
+        Doğum Tarihi:<br>
+        <input type="date" name="DogumTarihi">
+        <br>
+        <br><br>
+        <input type="submit" value="Gonder">
+        <input type="reset" value="Sil">
+
+    </form>
+</body>
+</html>
